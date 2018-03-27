@@ -60,7 +60,6 @@ void menudzialania(zbior &A , zbior &B)
         cout << "MENU DZIALANIA\n1 - suma A+B\n2 - suma A = A+B\n3 - roznica A - B\n4 - roznica A = A - B\n5 - przeciecie A * B" << endl ;
         cout << "6 - przeciecie A = A * B\n7 - sprawdzenie, czy zbiory sa rowne\n8 - sprawdzenie, czy zbiory sa rozne" << endl ;
         cout << "9 - powrot do menu glownego" << endl ;
-        poprawnosc() ;
         cin >> wybor ;
         switch (wybor)
         {
@@ -68,19 +67,19 @@ void menudzialania(zbior &A , zbior &B)
                     cout << "Wynik: " << wynik << endl;
             break;
             case 2: A+=B ;
-                    cout << A ;
+                    cout << A << endl ;  ;
             break ;
             case 3: wynik  = A - B ;
                     cout << "Wynik: " << wynik << endl;
             break ;
             case 4: A-=B ;
-                    cout << A ;
+                    cout << A << endl;
             break ;
             case 5: wynik = A * B ;
                     cout << "Wynik: " << wynik << endl;
             break ;
             case 6: A*=B ;
-                    cout << A ;
+                    cout << A << endl;
             break ;
             case 7: if ((A==B) == true )
                     {
